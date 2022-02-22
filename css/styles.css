@@ -282,6 +282,7 @@ ul {
 .feature-icon {
   height: 70px;
   width: 70px;
+  vertical-align: middle;
 }
 /* areas*/
 .areas {
@@ -428,13 +429,12 @@ ul {
   cursor: pointer;
 }
 .portfolio-btn:hover,
-.portfolio-btn:focus {
-  color: var(--primary-color-white);
-  background-color: var(--accent-color);
-}
+.portfolio-btn:focus,
 .portfolio-btn.active {
   color: var(--primary-color-white);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .portfolio-list {
   display: flex;
@@ -444,6 +444,11 @@ ul {
 .portfolio-item {
   width: calc((100% - 90px) / 3);
   margin: 15px;
+}
+.portfolio-item:hover,
+.portfolio-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .portfolio-item:nth-last-child(-n + 3) {
   margin-bottom: 0;
