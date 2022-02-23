@@ -273,16 +273,17 @@ ul {
   color: var(--secondary-color-text);
 }
 .feature-box {
-  padding: 25px 0;
+  min-height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 30px;
   background-color: var(--primary-color-bg);
   border-radius: 4px;
-  text-align: center;
 }
 .feature-icon {
   height: 70px;
   width: 70px;
-  vertical-align: middle;
 }
 /* areas*/
 .areas {
@@ -384,11 +385,14 @@ ul {
   margin-right: 30px;
 }
 .clients-link {
-  display: block;
+  min-height: 92px;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
   border: 1px solid var(--clients-icon-color);
   color: var(--clients-icon-color);
-  border-radius: 4px;
-  padding: 15px 32px;
 }
 .clients-link:hover,
 .clients-link:focus {
@@ -398,7 +402,6 @@ ul {
   width: 106px;
   height: 60px;
   fill: var(--clients-icon-color);
-  vertical-align: middle;
 }
 .clients-link:hover .clients-icon,
 .clients-link:focus .clients-icon {
