@@ -192,10 +192,11 @@ ul {
   margin-right: 10px;
 }
 .footer-social-link {
-  display: block;
-  padding: 12px;
   width: 44px;
   height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   border-radius: 100%;
   background: var(--footer-social-color);
@@ -352,10 +353,11 @@ ul {
   margin-right: 0;
 }
 .team-social-link {
-  display: block;
-  padding: 12px;
   height: 44px;
   width: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: transparent;
   border-radius: 100%;
 }
